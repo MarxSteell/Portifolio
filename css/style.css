@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.txt {
+    font-family: 'Segoe UI';
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 20em;
+}
+
+.assinatura {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.assinatura img {
+    align-items: center;
+    width: 40em;
+    height: 10em;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+    height: 100vh;
+    background-image: url(../Imagens/fundo.jpg);
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+#menu::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../Imagens/gradiente.png");
+    background-position: top;
+    background-size: cover; 
+    z-index: 2;
+   
+}
+.menu section {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.menu section h1 {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.topo {
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100vw;
+    padding: 0 5%;
+    z-index: 2;
+}
+
+.topo nav {
+    flex: 1;
+    display: flex;
+    width: 925.667px;
+}
+
+.topo ul {
+    flex: 1;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    width: 100%; 
+    text-align: center;
+}
+
+.topo ul li {
+    flex: 1;
+    list-style-type: none;
+    justify-content: space-between
+}
+
+.topo.topo-fantasma {
+    z-index: 0;
+    position: fixed;
+    background-color: rgba(204, 204, 204, 0.5);
+    height: 5em;
+}
+
+.topo.topo-fantasma .txt {
+    color: black;
+}
+
+.topo.topo-fantasma .logo {
+    position: fixed;
+    z-index: 0;
+}
+.li_especial{
+    flex: 2;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.7em;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    padding-right: 1em;
+    z-index: 2;
+}
+.icons img{
+    margin-bottom: 4em;
+}
+.img1 {
+    width: 26px;
+    height: 26px;
+}
+
+.img2 {
+    width: 31px;
+    height: 31px;
+}
+
+.img3 {
+    width: 29px;
+    height: 29px;
+}
+
+.img4 {
+    width: 28px;
+    height: 28px;
+}
+
+#contain {
+    z-index: -1;
+    min-height: 2000px;
+}
+
+.tech h2 {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: 2em;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8em;
+}
+
+.imagens img {
+    width: 6em;
+}
+
+.imgtxt {
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5.5em; 
+    padding-right: 4em;
+    padding-top: 4em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.imgtxt span ~ span {
+    padding-left: 1em;
+}
+
+.form h2 {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: 2em;
+}
+
+.form span {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.port h2 {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: 2em;
+}
